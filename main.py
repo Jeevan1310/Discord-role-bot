@@ -56,8 +56,4 @@ alive()
 bot.run(os.getenv('token'))
 
 
-#about yip
-#clg status
-#meeting
-#upcoming programs
-#interest groups
+
