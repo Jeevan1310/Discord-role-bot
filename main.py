@@ -20,8 +20,7 @@ async def on_member_join(member):
 async def on_message(message):
     if message.author == bot.user:
         return
-    if message.content.startswith('hello'):
-      await message.channel.send('Hello !!!')
+    
     if message.content.startswith(f'kop'):
       await message.channel.send(f'Enna pattiyeda enna prashnam {message.author.mention}')
     
