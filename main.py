@@ -1,11 +1,12 @@
 import discord
 import os
-from discord.ext import commands
 from alive import alive
 
 
 
-bot =commands.Bot(command_prefix='!')
+bot =discord.Client()
+
+
 
 @bot.event
 async def on_ready():
@@ -47,10 +48,6 @@ async def on_message(message):
       
     if message.content.startswith('rose'):
       await message.channel.send('https://user-images.githubusercontent.com/81223681/147108054-4321e894-d906-40ca-b110-b36bbcb998f9.jpg')
-    
-@bot.command()
-async def ping(ctx):
-	await ctx.channel.send("pong")
 
 
 alive()
