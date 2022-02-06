@@ -21,7 +21,7 @@ async def on_message(message):
     if message.author == bot.user:
         return
     
-    if message.content.startswith(f'kop'):
+    if message.content.startswith(f'kop edaa'):
       await message.channel.send(f'Enna pattiyeda enna prashnam {message.author.mention}')
     
     if message.content.startswith(f'#intro'): #role assigned with a command
