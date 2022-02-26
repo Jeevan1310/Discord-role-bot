@@ -17,10 +17,17 @@ async def on_member_join(member):
   print(f'{member} has joined server')
 
 @bot.event
-async def on_message(message):
+async def on_message(message,user=discord.Member):
     if message.author == bot.user:
         return
+      
+    if message.content.startswith(f'=dm'):
+      message="hello user"
+      embed=discord.Embed(title=message)
+      await user.send(embed=embed)
     
+
+  
     if message.content.startswith(f'kop edaa'):
       await message.channel.send(f'Enna pattiyeda enna prashnam {message.author.mention}')
     
