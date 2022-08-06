@@ -1,2 +1,2 @@
 async def example(ctx):
-  await ctx.send("successful")
+    await ctx.send("successful")
